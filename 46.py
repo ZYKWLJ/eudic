@@ -2,7 +2,7 @@ import pandas as pd
 
 # 1. 定义文件名前缀（只需要修改这里的 name 变量即可）
 name_xls = "4"  # 你可以改成任意名称，比如 "vocab"、"english_words" 等
-name = "4_3"  # 这是生成的文件
+name = "4_10"  # 这是生成的文件
 
 # 2. 拼接完整的文件路径
 input_file = f'{name_xls}.xls'   # 输入的 Excel 文件
@@ -25,7 +25,7 @@ except KeyError as e:
     exit()
 
 # 5. 按每 45 个单词为一个 unit 分组
-unit_size = 45
+unit_size = 10
 total_units = (len(words) + unit_size - 1) // unit_size  # 向上取整
 
 # 6. 生成输出文本

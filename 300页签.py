@@ -65,8 +65,8 @@ def split_excel_by_rows(input_file, output_file, rows_per_sheet=45):
 if __name__ == "__main__":
     # 请修改以下路径为你的实际文件路径
     INPUT_FILE = "4.xls"    # 输入文件路径
-    OUTPUT_FILE = "4_45.xlsx"  # 输出文件路径
-    ROWS_PER_SHEET = 45                  # 每个sheet的行数
+    OUTPUT_FILE = "4_10.xlsx"  # 输出文件路径
+    ROWS_PER_SHEET = 10                  # 每个sheet的行数
     
     # 执行拆分
     split_excel_by_rows(INPUT_FILE, OUTPUT_FILE, ROWS_PER_SHEET)
